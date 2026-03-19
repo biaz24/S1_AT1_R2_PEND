@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/pages/login.js" defer></script>
+
+    <!-- LINK ICONES DO BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form__box login">
+          <form action="">
+            <h1>Login</h1>
+            <div class="input__box">
+              <input type="text" name="" id="" placeholder="Username" />
+              <i class="bx bxs-user"></i>
+            </div>
+            <div class="input__box">
+              <input type="text" name="" id="" placeholder="Password" />
+              <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="forgot__link"><a href="">Forgot password?</a></div>
+            <button class="btn">Login</button>
+            <p>Or login with social platforms</p>
+            <div class="social__icons">
+              <a href=""><i class="bx bxl-google"></i></a>
+              <a href=""><i class="bx bxl-facebook"></i></a>
+              <a href=""><i class="bx bxl-github"></i></a>
+              <a href=""><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </form>
+        </div>
+
+        <div class="form__box register">
+          <form id="form"action="">
+            <h1>Registration</h1>
+            <div class="input__box">
+              <input type="text" name="nome" id="nome" placeholder="Username" />
+              <i class="bx bxs-user"></i>
+            </div>
+            <div class="input__box">
+              <input type="email" name="email" id="email" placeholder="E-mail" />
+              <i class="bx bxs-envelope"></i>
+            </div>
+            <div class="input__box">
+              <input type="text" name="password" id="password" placeholder="Password" />
+              <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="input__box">
+              <input type="text" name="ConfirmPassword" id="ConfirmPassword" placeholder="Confirm password" />
+              <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="input__box">
+              <input type="number" name="idade" id="idade" placeholder="Idade" />
+              <i class="bx bxs-calendar"></i>
+            </div>
+            <div class="input__box">
+              <input type="text" name="cpf" id="cpf" placeholder="CPF" />
+              <i class="bx bxs-id-card"></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <p>Or register with social platforms</p>
+            <div class="social__icons">
+              <a href=""><i class="bx bxl-google"></i></a>
+              <a href=""><i class="bx bxl-facebook"></i></a>
+              <a href=""><i class="bx bxl-github"></i></a>
+              <a href=""><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <span class="msgError"></span>
+          </form>
+        </div>
+
+        <div class="toggle__box">
+          <div class="toggle__panel toggle__left">
+            <h1>Hello, Welcome</h1>
+            <p>Don't have an account?</p>
+            <button class="btn register__btn">Register</button>
+          </div>
+          <div class="toggle__panel toggle__right">
+            <h1>Welcome Back!</h1>
+            <p>Already have an account?</p>
+            <button class="btn login__btn">Login</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

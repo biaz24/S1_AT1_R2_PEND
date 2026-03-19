@@ -1,0 +1,58 @@
+/* 1. Usa box-sizing mais previsível */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove margin default */
+* {
+  margin: 0;
+}
+
+/* 3. Garantir altura mínima total */
+html,
+body {
+  height: 100%;
+}
+
+/* 4. Tipografia mais suave e consistente */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Imagens nunca estouram contêiner */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inputs e buttons herdam fontes */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Evita que textos longos quebrem Layout */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Para apps React / SPA: cria um stacking context isolado */
+#root,
+#__next {
+  isolation: isolate;
+}
